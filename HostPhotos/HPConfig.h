@@ -16,4 +16,7 @@
 /// 网络超时时间
 #define NETWORK_TIMEOUT 15
 
+#define IMAGE_INCREASE_EVERY_TIME 30          
+#define BaseURL @"http://hostgirls.sinaapp.com"
+
 #endif /* HPConfig_h */

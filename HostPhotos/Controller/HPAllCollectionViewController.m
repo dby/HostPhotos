@@ -10,12 +10,17 @@
 
 #import "MeiziCell.h"
 #import "HPConfig.h"
+#import "HPViewModel.h"
 #import "HPDataModel.h"
+#import "HostPhotosRequest.h"
 #import "UIImageView+UIActivityIndicatorForSDWebImage.h"
 
 @interface HPAllCollectionViewController ()
 
 @property (nonatomic, strong) NSMutableArray *meiziArray;
+@property (nonatomic, strong) HPViewModel *viewModel;
+@property (nonatomic, assign) NSInteger off;
+@property (nonatomic, assign) NSInteger lim;
 
 @end
 
@@ -23,11 +28,26 @@
 
 static NSString * const reuseIdentifier = @"Cell";
 
+#pragma mark - life cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self.collectionView registerClass:[MeiziCell class] forCellWithReuseIdentifier:@"MeiziCell"];
     
+    [self initComponent];
+    
+    [self.viewModel getData:_off withLim:_lim withSuccessBack:^(NSArray *datasource) {
+        
+    } withErrorCallBack:^(NSError *error) {
+        
+    }];
+}
+
+#pragma mark - Init
+- (void)initComponent {
+    self.viewModel = [[HPViewModel alloc] initWithType:MeiziTypeAll];
+    self.lim = 20;
+    self.off = 0;
 }
 
 #pragma mark <UICollectionViewDataSource>

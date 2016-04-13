@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <YTKNetwork/YTKNetworkConfig.h>
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
+#import <YTKNetworkConfig.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

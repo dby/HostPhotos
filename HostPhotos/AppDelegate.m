@@ -7,8 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "SwipableViewController.h"
+#import "HPFlowLayout.h"
+
+#import "HPAllCollectionViewController.h"
+#import "HPBigChestCollectionViewController.h"
+#import "HPSmallBottomCollectionViewController.h"
+#import "HPCharmingLegCollectionViewController.h"
+#import "HPBlackStockingCollectionViewController.h"
 
 @interface AppDelegate ()
+{
+    HPAllCollectionViewController           *hpAllcvc;
+    HPBigChestCollectionViewController      *hpBigcvc;
+    HPSmallBottomCollectionViewController   *hpSmallBottomcvc;
+    
+    HPCharmingLegCollectionViewController   *hpCharmingLegcvc;
+    HPBlackStockingCollectionViewController *hpBlackStockingcvc;
+}
+
+@property (nonatomic, strong) UINavigationController *naviController;
 
 @end
 
@@ -16,7 +34,27 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    HPFlowLayout *layout = [[HPFlowLayout alloc] init];
+    
+    hpAllcvc            = [[HPAllCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    hpBigcvc            = [[HPBigChestCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    hpSmallBottomcvc    = [[HPSmallBottomCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    hpCharmingLegcvc    = [[HPCharmingLegCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    hpBlackStockingcvc  = [[HPBlackStockingCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    
+    SwipableViewController *svc = [[SwipableViewController alloc] initWithTitle:@"HostGirls"
+                                                                             andSubTitles:@[@"所有", @"大胸", @"翘臀", @"美腿", @"黑丝"]
+                                                                           andControllers:@[hpAllcvc, hpBigcvc, hpSmallBottomcvc,
+                                                                                            hpCharmingLegcvc, hpBlackStockingcvc]];
+    
+    _naviController = [[UINavigationController alloc] initWithRootViewController:svc];
+    self.window.rootViewController = _naviController;
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor purpleColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

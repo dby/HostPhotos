@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MeiziCell.h
 //  HostPhotos
 //
 //  Created by sys on 16/4/13.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MeiziCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *imageview;
 
 @end
-

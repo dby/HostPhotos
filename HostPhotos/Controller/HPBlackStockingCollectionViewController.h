@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HPBlackStockingCollectionViewController : UICollectionViewController
+@interface HPBlackStockingCollectionViewController : UIViewController
 
 @end

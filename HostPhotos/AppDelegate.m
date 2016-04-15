@@ -44,13 +44,12 @@
     NSDictionary *userAgent = @{@"UserAgent": @"Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4"};
     [[NSUserDefaults standardUserDefaults] registerDefaults:userAgent];
     
-    HPFlowLayout *layout = [[HPFlowLayout alloc] init];
     
-    hpAllcvc            = [[HPAllCollectionViewController alloc] initWithCollectionViewLayout:layout];
-    hpBigcvc            = [[HPBigChestCollectionViewController alloc] initWithCollectionViewLayout:layout];
-    hpSmallBottomcvc    = [[HPSmallBottomCollectionViewController alloc] initWithCollectionViewLayout:layout];
-    hpCharmingLegcvc    = [[HPCharmingLegCollectionViewController alloc] initWithCollectionViewLayout:layout];
-    hpBlackStockingcvc  = [[HPBlackStockingCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    hpAllcvc            = [[HPAllCollectionViewController alloc] init];
+    hpBigcvc            = [[HPBigChestCollectionViewController alloc] init];
+    hpSmallBottomcvc    = [[HPSmallBottomCollectionViewController alloc] init];
+    hpCharmingLegcvc    = [[HPCharmingLegCollectionViewController alloc] init];
+    hpBlackStockingcvc  = [[HPBlackStockingCollectionViewController alloc] init];
     
     SwipableViewController *svc = [[SwipableViewController alloc] initWithTitle:@"HostGirls"
                                                                              andSubTitles:@[@"所有", @"大胸", @"翘臀", @"美腿", @"黑丝"]

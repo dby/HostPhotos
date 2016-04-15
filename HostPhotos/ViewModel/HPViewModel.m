@@ -14,11 +14,19 @@
 -(instancetype)initWithType:(MeiziType)type {
     self = [super init];
     if (self) {
+        [self initComponents];
         self.type = type;
     }
     return self;
 }
 
+-(void)initComponents {
+    
+    self.dataSource = [[NSMutableArray alloc] init];
+}
+
+
+#pragma mark - Custom Function
 -(void)getData:(NSInteger)off withLim:(NSInteger)lim withSuccessBack:(HPViewModelSuccessBack)successCallBack withErrorCallBack:(HPVieModelErrorCallBack)errorCallBack
 {
     self.successCallBack = successCallBack;
@@ -29,7 +37,6 @@
     [hpr startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request) {
         
         NSArray *dataArr = [request.responseJSONObject objectForKey:@"meizi"];
-        NSLog(@"json_object: %@", request.responseJSONObject);
         if ([dataArr count] > 0) {
             if (off == 0) {
                 [self.dataSource removeAllObjects];

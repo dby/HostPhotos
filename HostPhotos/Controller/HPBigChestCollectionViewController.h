@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HPBigChestCollectionViewController : UICollectionViewController
+@interface HPBigChestCollectionViewController : UIViewController
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HPSmallBottomCollectionViewController : UICollectionViewController
+@interface HPSmallBottomCollectionViewController : UIViewController
 
 @end

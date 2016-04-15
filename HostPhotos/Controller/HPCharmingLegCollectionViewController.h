@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HPCharmingLegCollectionViewController : UICollectionViewController
+@interface HPCharmingLegCollectionViewController : UIViewController
 
 @end

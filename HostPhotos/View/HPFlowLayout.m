@@ -14,10 +14,11 @@
 -(void)prepareLayout {
     
     [super prepareLayout];
-    self.itemSize           = CGSizeMake(SCREEN_WIDTH/8-2, 60);
-    self.scrollDirection    = UICollectionViewScrollDirectionHorizontal;
-    self.sectionInset       = UIEdgeInsetsMake(0, 2, 0, 2);
+    
+    self.itemSize           = CGSizeMake(SCREEN_WIDTH/3 - 2, SCREEN_WIDTH/2.5 - 1);
+    self.scrollDirection    = UICollectionViewScrollDirectionVertical;
     self.minimumLineSpacing = 2;
+    self.minimumInteritemSpacing = 2;
 }
 
 @end

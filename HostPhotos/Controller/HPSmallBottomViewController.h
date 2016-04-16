@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HPViewController.h"
 
-@interface HPSmallBottomCollectionViewController : UIViewController
+@interface HPSmallBottomViewController : HPViewController
 
 @end

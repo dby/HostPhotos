@@ -6,8 +6,9 @@
 //  Copyright © 2016年 sys. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "HPViewController.h"
+#import "HostPhotosRequest.h"
 
-@interface HPAllCollectionViewController : UIViewController
+@interface HPAllViewController : HPViewController
 
 @end

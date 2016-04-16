@@ -11,20 +11,20 @@
 #import "HPFlowLayout.h"
 #import "HPConfig.h"
 
-#import "HPAllCollectionViewController.h"
-#import "HPBigChestCollectionViewController.h"
-#import "HPSmallBottomCollectionViewController.h"
-#import "HPCharmingLegCollectionViewController.h"
-#import "HPBlackStockingCollectionViewController.h"
+#import "HPAllViewController.h"
+#import "HPBigChestViewController.h"
+#import "HPSmallBottomViewController.h"
+#import "HPCharmingLegViewController.h"
+#import "HPBlackStockingViewController.h"
 
 @interface AppDelegate ()
 {
-    HPAllCollectionViewController           *hpAllcvc;
-    HPBigChestCollectionViewController      *hpBigcvc;
-    HPSmallBottomCollectionViewController   *hpSmallBottomcvc;
+    HPAllViewController           *hpAllcvc;
+    HPBigChestViewController      *hpBigcvc;
+    HPSmallBottomViewController   *hpSmallBottomcvc;
     
-    HPCharmingLegCollectionViewController   *hpCharmingLegcvc;
-    HPBlackStockingCollectionViewController *hpBlackStockingcvc;
+    HPCharmingLegViewController   *hpCharmingLegcvc;
+    HPBlackStockingViewController *hpBlackStockingcvc;
 }
 
 @property (nonatomic, strong) UINavigationController *naviController;
@@ -45,16 +45,15 @@
     [[NSUserDefaults standardUserDefaults] registerDefaults:userAgent];
     
     
-    hpAllcvc            = [[HPAllCollectionViewController alloc] init];
-    hpBigcvc            = [[HPBigChestCollectionViewController alloc] init];
-    hpSmallBottomcvc    = [[HPSmallBottomCollectionViewController alloc] init];
-    hpCharmingLegcvc    = [[HPCharmingLegCollectionViewController alloc] init];
-    hpBlackStockingcvc  = [[HPBlackStockingCollectionViewController alloc] init];
+    hpAllcvc            = [[HPAllViewController alloc] init];
+    hpBigcvc            = [[HPBigChestViewController alloc] init];
+    hpSmallBottomcvc    = [[HPSmallBottomViewController alloc] init];
+    hpCharmingLegcvc    = [[HPCharmingLegViewController alloc] init];
+    hpBlackStockingcvc  = [[HPBlackStockingViewController alloc] init];
     
     SwipableViewController *svc = [[SwipableViewController alloc] initWithTitle:@"HostGirls"
-                                                                             andSubTitles:@[@"所有", @"大胸", @"翘臀", @"美腿", @"黑丝"]
-                                                                           andControllers:@[hpAllcvc, hpBigcvc, hpSmallBottomcvc,
-                                                                                            hpCharmingLegcvc, hpBlackStockingcvc]];
+                                                                   andSubTitles:@[@"所有", @"大胸", @"翘臀", @"美腿", @"黑丝"]
+                                                                 andControllers:@[hpAllcvc, hpBigcvc, hpSmallBottomcvc, hpCharmingLegcvc, hpBlackStockingcvc]];
     
     _naviController = [[UINavigationController alloc] initWithRootViewController:svc];
     self.window.rootViewController = _naviController;

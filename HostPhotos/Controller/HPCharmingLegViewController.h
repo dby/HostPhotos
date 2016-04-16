@@ -1,5 +1,5 @@
 //
-//  HPBlackStockingCollectionViewController.h
+//  HPCharmingLegCollectionViewController.h
 //  HostPhotos
 //
 //  Created by sys on 16/4/13.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HPViewController.h"
 
-@interface HPBlackStockingCollectionViewController : UIViewController
+@interface HPCharmingLegViewController : HPViewController
 
 @end

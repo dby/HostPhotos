@@ -30,4 +30,7 @@
 @property (nonatomic, strong) NSDate *lastRefreshTime;
 @property (nonatomic, strong) NSUserDefaults *userDefaults;
 
+-(void) refreshMeizi;
+-(void) loadMoreMeizi;
+
 @end

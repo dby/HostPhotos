@@ -15,13 +15,7 @@ typedef void (^HPVieModelErrorCallBack)(NSError *error);
 @interface HPViewModel : NSObject
 
 @property (nonatomic, assign) MeiziType type;
-@property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
-
-@property (nonatomic, assign) BOOL needAutoRefresh;
-@property (nonatomic, strong) NSDate *lastRefreshTime;
-@property (nonatomic, copy) NSString *kLastRefreshTime;
-@property (nonatomic, strong) NSUserDefaults *userDefaults;
 
 @property (nonatomic, copy) HPViewModelSuccessBack successCallBack ;
 @property (nonatomic, copy) HPVieModelErrorCallBack errorCallBack   ;

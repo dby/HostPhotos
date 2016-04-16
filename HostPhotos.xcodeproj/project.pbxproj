@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4327FD7B1CBFFB4C005CC20A /* MeiZiCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4327FD791CBFFB4C005CC20A /* MeiZiCollectionViewCell.m */; };
+		4327FD7C1CBFFB4C005CC20A /* MeiZiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4327FD7A1CBFFB4C005CC20A /* MeiZiCollectionViewCell.xib */; };
 		436EE1A91CBE73AA000F4D36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 436EE1A81CBE73AA000F4D36 /* main.m */; };
 		436EE1AC1CBE73AA000F4D36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 436EE1AB1CBE73AA000F4D36 /* AppDelegate.m */; };
-		436EE1AF1CBE73AA000F4D36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 436EE1AE1CBE73AA000F4D36 /* ViewController.m */; };
 		436EE1B21CBE73AA000F4D36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 436EE1B01CBE73AA000F4D36 /* Main.storyboard */; };
 		436EE1B41CBE73AA000F4D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 436EE1B31CBE73AA000F4D36 /* Assets.xcassets */; };
 		436EE1B71CBE73AA000F4D36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 436EE1B51CBE73AA000F4D36 /* LaunchScreen.storyboard */; };
 		436EE1C21CBE73AA000F4D36 /* HostPhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 436EE1C11CBE73AA000F4D36 /* HostPhotosTests.m */; };
 		436EE1CD1CBE73AA000F4D36 /* HostPhotosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 436EE1CC1CBE73AA000F4D36 /* HostPhotosUITests.m */; };
+		43AF13261CBE7C26003A0598 /* HostPhotosRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AF13251CBE7C26003A0598 /* HostPhotosRequest.m */; };
+		43AF13291CBE8619003A0598 /* HPDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AF13281CBE8619003A0598 /* HPDataModel.m */; };
+		43AF132C1CBE8CC0003A0598 /* HPAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AF132B1CBE8CC0003A0598 /* HPAllViewController.m */; };
+		43AF132F1CBE8CD9003A0598 /* HPBigChestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AF132E1CBE8CD9003A0598 /* HPBigChestViewController.m */; };
+		43AF13321CBE8CFA003A0598 /* HPSmallBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AF13311CBE8CFA003A0598 /* HPSmallBottomViewController.m */; };
+		43AF13351CBE8D17003A0598 /* HPCharmingLegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AF13341CBE8D17003A0598 /* HPCharmingLegViewController.m */; };
+		43AF13381CBE8D35003A0598 /* HPBlackStockingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AF13371CBE8D35003A0598 /* HPBlackStockingViewController.m */; };
+		43AF13441CBE9A8D003A0598 /* HPFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AF13431CBE9A8D003A0598 /* HPFlowLayout.m */; };
+		43AF13471CBEA19D003A0598 /* HPViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AF13461CBEA19D003A0598 /* HPViewModel.m */; };
+		43FAADD51CC27898009BAAFF /* HPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FAADD41CC27898009BAAFF /* HPViewController.m */; };
+		B0B234D78D34C92D34C4B5A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF48B886BDC47FF3B86CBEE /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A661C6071AFFE595E3E042C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4327FD781CBFFB4C005CC20A /* MeiZiCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeiZiCollectionViewCell.h; path = View/MeiZiCollectionViewCell.h; sourceTree = "<group>"; };
+		4327FD791CBFFB4C005CC20A /* MeiZiCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeiZiCollectionViewCell.m; path = View/MeiZiCollectionViewCell.m; sourceTree = "<group>"; };
+		4327FD7A1CBFFB4C005CC20A /* MeiZiCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MeiZiCollectionViewCell.xib; path = View/MeiZiCollectionViewCell.xib; sourceTree = "<group>"; };
 		436EE1A41CBE73AA000F4D36 /* HostPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HostPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		436EE1A81CBE73AA000F4D36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		436EE1AA1CBE73AA000F4D36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		436EE1AB1CBE73AA000F4D36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		436EE1AD1CBE73AA000F4D36 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		436EE1AE1CBE73AA000F4D36 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		436EE1B11CBE73AA000F4D36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		436EE1B31CBE73AA000F4D36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		436EE1B61CBE73AA000F4D36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +65,29 @@
 		436EE1C81CBE73AA000F4D36 /* HostPhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostPhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		436EE1CC1CBE73AA000F4D36 /* HostPhotosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HostPhotosUITests.m; sourceTree = "<group>"; };
 		436EE1CE1CBE73AA000F4D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43AF13241CBE7C26003A0598 /* HostPhotosRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HostPhotosRequest.h; path = ViewModel/HostPhotosRequest.h; sourceTree = "<group>"; };
+		43AF13251CBE7C26003A0598 /* HostPhotosRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HostPhotosRequest.m; path = ViewModel/HostPhotosRequest.m; sourceTree = "<group>"; };
+		43AF13271CBE8619003A0598 /* HPDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPDataModel.h; path = Model/HPDataModel.h; sourceTree = "<group>"; };
+		43AF13281CBE8619003A0598 /* HPDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPDataModel.m; path = Model/HPDataModel.m; sourceTree = "<group>"; };
+		43AF132A1CBE8CC0003A0598 /* HPAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPAllViewController.h; path = Controller/HPAllViewController.h; sourceTree = "<group>"; };
+		43AF132B1CBE8CC0003A0598 /* HPAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPAllViewController.m; path = Controller/HPAllViewController.m; sourceTree = "<group>"; };
+		43AF132D1CBE8CD9003A0598 /* HPBigChestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPBigChestViewController.h; path = Controller/HPBigChestViewController.h; sourceTree = "<group>"; };
+		43AF132E1CBE8CD9003A0598 /* HPBigChestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPBigChestViewController.m; path = Controller/HPBigChestViewController.m; sourceTree = "<group>"; };
+		43AF13301CBE8CFA003A0598 /* HPSmallBottomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPSmallBottomViewController.h; path = Controller/HPSmallBottomViewController.h; sourceTree = "<group>"; };
+		43AF13311CBE8CFA003A0598 /* HPSmallBottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPSmallBottomViewController.m; path = Controller/HPSmallBottomViewController.m; sourceTree = "<group>"; };
+		43AF13331CBE8D17003A0598 /* HPCharmingLegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPCharmingLegViewController.h; path = Controller/HPCharmingLegViewController.h; sourceTree = "<group>"; };
+		43AF13341CBE8D17003A0598 /* HPCharmingLegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPCharmingLegViewController.m; path = Controller/HPCharmingLegViewController.m; sourceTree = "<group>"; };
+		43AF13361CBE8D35003A0598 /* HPBlackStockingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPBlackStockingViewController.h; path = Controller/HPBlackStockingViewController.h; sourceTree = "<group>"; };
+		43AF13371CBE8D35003A0598 /* HPBlackStockingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPBlackStockingViewController.m; path = Controller/HPBlackStockingViewController.m; sourceTree = "<group>"; };
+		43AF13391CBE9354003A0598 /* HPConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPConfig.h; sourceTree = "<group>"; };
+		43AF13421CBE9A8D003A0598 /* HPFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPFlowLayout.h; path = View/HPFlowLayout.h; sourceTree = "<group>"; };
+		43AF13431CBE9A8D003A0598 /* HPFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPFlowLayout.m; path = View/HPFlowLayout.m; sourceTree = "<group>"; };
+		43AF13451CBEA19D003A0598 /* HPViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPViewModel.h; path = ViewModel/HPViewModel.h; sourceTree = "<group>"; };
+		43AF13461CBEA19D003A0598 /* HPViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPViewModel.m; path = ViewModel/HPViewModel.m; sourceTree = "<group>"; };
+		43FAADD31CC27898009BAAFF /* HPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPViewController.h; path = Controller/HPViewController.h; sourceTree = "<group>"; };
+		43FAADD41CC27898009BAAFF /* HPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPViewController.m; path = Controller/HPViewController.m; sourceTree = "<group>"; };
+		6AF48B886BDC47FF3B86CBEE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00753311EB9381924E8A622 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B234D78D34C92D34C4B5A7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +123,8 @@
 				436EE1C01CBE73AA000F4D36 /* HostPhotosTests */,
 				436EE1CB1CBE73AA000F4D36 /* HostPhotosUITests */,
 				436EE1A51CBE73AA000F4D36 /* Products */,
+				D110EBC24B3CDF48C898D2E5 /* Pods */,
+				CDF7195FD692C6873A0D1519 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +141,13 @@
 		436EE1A61CBE73AA000F4D36 /* HostPhotos */ = {
 			isa = PBXGroup;
 			children = (
+				436EE1DD1CBE7581000F4D36 /* ViewModel */,
+				436EE1DC1CBE7559000F4D36 /* View */,
+				436EE1DB1CBE7541000F4D36 /* Controller */,
+				436EE1DA1CBE7532000F4D36 /* Model */,
 				436EE1AA1CBE73AA000F4D36 /* AppDelegate.h */,
 				436EE1AB1CBE73AA000F4D36 /* AppDelegate.m */,
-				436EE1AD1CBE73AA000F4D36 /* ViewController.h */,
-				436EE1AE1CBE73AA000F4D36 /* ViewController.m */,
 				436EE1B01CBE73AA000F4D36 /* Main.storyboard */,
-				436EE1B31CBE73AA000F4D36 /* Assets.xcassets */,
-				436EE1B51CBE73AA000F4D36 /* LaunchScreen.storyboard */,
-				436EE1B81CBE73AA000F4D36 /* Info.plist */,
 				436EE1A71CBE73AA000F4D36 /* Supporting Files */,
 			);
 			path = HostPhotos;
@@ -117,6 +156,9 @@
 		436EE1A71CBE73AA000F4D36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				436EE1B31CBE73AA000F4D36 /* Assets.xcassets */,
+				436EE1B51CBE73AA000F4D36 /* LaunchScreen.storyboard */,
+				436EE1B81CBE73AA000F4D36 /* Info.plist */,
 				436EE1A81CBE73AA000F4D36 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +182,75 @@
 			path = HostPhotosUITests;
 			sourceTree = "<group>";
 		};
+		436EE1DA1CBE7532000F4D36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43AF13271CBE8619003A0598 /* HPDataModel.h */,
+				43AF13281CBE8619003A0598 /* HPDataModel.m */,
+				43AF13391CBE9354003A0598 /* HPConfig.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		436EE1DB1CBE7541000F4D36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43FAADD31CC27898009BAAFF /* HPViewController.h */,
+				43FAADD41CC27898009BAAFF /* HPViewController.m */,
+				43AF132A1CBE8CC0003A0598 /* HPAllViewController.h */,
+				43AF132B1CBE8CC0003A0598 /* HPAllViewController.m */,
+				43AF132D1CBE8CD9003A0598 /* HPBigChestViewController.h */,
+				43AF132E1CBE8CD9003A0598 /* HPBigChestViewController.m */,
+				43AF13301CBE8CFA003A0598 /* HPSmallBottomViewController.h */,
+				43AF13311CBE8CFA003A0598 /* HPSmallBottomViewController.m */,
+				43AF13331CBE8D17003A0598 /* HPCharmingLegViewController.h */,
+				43AF13341CBE8D17003A0598 /* HPCharmingLegViewController.m */,
+				43AF13361CBE8D35003A0598 /* HPBlackStockingViewController.h */,
+				43AF13371CBE8D35003A0598 /* HPBlackStockingViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		436EE1DC1CBE7559000F4D36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43AF13421CBE9A8D003A0598 /* HPFlowLayout.h */,
+				43AF13431CBE9A8D003A0598 /* HPFlowLayout.m */,
+				4327FD781CBFFB4C005CC20A /* MeiZiCollectionViewCell.h */,
+				4327FD791CBFFB4C005CC20A /* MeiZiCollectionViewCell.m */,
+				4327FD7A1CBFFB4C005CC20A /* MeiZiCollectionViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		436EE1DD1CBE7581000F4D36 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				43AF13241CBE7C26003A0598 /* HostPhotosRequest.h */,
+				43AF13251CBE7C26003A0598 /* HostPhotosRequest.m */,
+				43AF13451CBEA19D003A0598 /* HPViewModel.h */,
+				43AF13461CBEA19D003A0598 /* HPViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CDF7195FD692C6873A0D1519 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AF48B886BDC47FF3B86CBEE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D110EBC24B3CDF48C898D2E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A661C6071AFFE595E3E042C /* Pods.debug.xcconfig */,
+				F00753311EB9381924E8A622 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 436EE1D11CBE73AA000F4D36 /* Build configuration list for PBXNativeTarget "HostPhotos" */;
 			buildPhases = (
+				3F8C335C283DC82B556BEC5A /* Check Pods Manifest.lock */,
 				436EE1A01CBE73AA000F4D36 /* Sources */,
 				436EE1A11CBE73AA000F4D36 /* Frameworks */,
 				436EE1A21CBE73AA000F4D36 /* Resources */,
+				D0D8E330A050025A0BC7288F /* Embed Pods Frameworks */,
+				B41164B4FBC139CC37C3B5BF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,7 +321,6 @@
 				TargetAttributes = {
 					436EE1A31CBE73AA000F4D36 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 3G3JV73KM2;
 					};
 					436EE1BC1CBE73AA000F4D36 = {
 						CreatedOnToolsVersion = 7.3;
@@ -247,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				436EE1B71CBE73AA000F4D36 /* LaunchScreen.storyboard in Resources */,
+				4327FD7C1CBFFB4C005CC20A /* MeiZiCollectionViewCell.xib in Resources */,
 				436EE1B41CBE73AA000F4D36 /* Assets.xcassets in Resources */,
 				436EE1B21CBE73AA000F4D36 /* Main.storyboard in Resources */,
 			);
@@ -268,14 +382,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F8C335C283DC82B556BEC5A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B41164B4FBC139CC37C3B5BF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0D8E330A050025A0BC7288F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		436EE1A01CBE73AA000F4D36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				436EE1AF1CBE73AA000F4D36 /* ViewController.m in Sources */,
+				43AF132C1CBE8CC0003A0598 /* HPAllViewController.m in Sources */,
+				4327FD7B1CBFFB4C005CC20A /* MeiZiCollectionViewCell.m in Sources */,
+				43AF132F1CBE8CD9003A0598 /* HPBigChestViewController.m in Sources */,
+				43FAADD51CC27898009BAAFF /* HPViewController.m in Sources */,
+				43AF13441CBE9A8D003A0598 /* HPFlowLayout.m in Sources */,
+				43AF13261CBE7C26003A0598 /* HostPhotosRequest.m in Sources */,
+				43AF13381CBE8D35003A0598 /* HPBlackStockingViewController.m in Sources */,
 				436EE1AC1CBE73AA000F4D36 /* AppDelegate.m in Sources */,
 				436EE1A91CBE73AA000F4D36 /* main.m in Sources */,
+				43AF13321CBE8CFA003A0598 /* HPSmallBottomViewController.m in Sources */,
+				43AF13471CBEA19D003A0598 /* HPViewModel.m in Sources */,
+				43AF13351CBE8D17003A0598 /* HPCharmingLegViewController.m in Sources */,
+				43AF13291CBE8619003A0598 /* HPDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,8 +588,10 @@
 		};
 		436EE1D21CBE73AA000F4D36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A661C6071AFFE595E3E042C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HostPhotos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sys.HostPhotos;
@@ -427,8 +601,10 @@
 		};
 		436EE1D31CBE73AA000F4D36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00753311EB9381924E8A622 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HostPhotos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sys.HostPhotos;
@@ -501,6 +677,7 @@
 				436EE1D31CBE73AA000F4D36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		436EE1D41CBE73AA000F4D36 /* Build configuration list for PBXNativeTarget "HostPhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +686,7 @@
 				436EE1D61CBE73AA000F4D36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		436EE1D71CBE73AA000F4D36 /* Build configuration list for PBXNativeTarget "HostPhotosUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +695,7 @@
 				436EE1D91CBE73AA000F4D36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

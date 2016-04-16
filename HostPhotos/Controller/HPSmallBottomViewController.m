@@ -20,15 +20,21 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
     
     self.viewModel = [[HPViewModel alloc] initWithType:MeiziTypeQiaoTun withCollectionView:self.contentCollectView];
+    [self initRefreshHeaderAndFooter];
+    [self.contentCollectView.mj_header beginRefreshing];
     
-    [self.viewModel getData:self.off withLim:self.lim withSuccessBack:^(NSArray *datasource) {
-        
-        self.meiziArray = [datasource copy];
-        [self.contentCollectView reloadData];
-        
-    } withErrorCallBack:^(NSError *error) {
-        
-    }];
+}
+
+- (void)initRefreshHeaderAndFooter {
+    
+    NSLog(@"%s", __func__);
+    MJRefreshNormalHeader *header       = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshMeizi)];
+    MJRefreshAutoNormalFooter *footer   = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreMeizi)];
+    header.automaticallyChangeAlpha     = YES;
+    footer.automaticallyRefresh         = NO;
+    
+    self.contentCollectView.mj_header = header;
+    self.contentCollectView.mj_footer = footer;
 }
 
 @end

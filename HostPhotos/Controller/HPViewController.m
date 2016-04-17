@@ -38,7 +38,7 @@ static NSString * const reuseIdentifier = @"MeiZiCellID";
     self.contentCollectView.delegate                        = self;
     self.contentCollectView.dataSource                      = self;
     self.contentCollectView.showsVerticalScrollIndicator    = true;
-    self.contentCollectView.pagingEnabled                   = true;
+    self.contentCollectView.pagingEnabled                   = false;
     
     [self.contentCollectView registerNib:[UINib nibWithNibName:@"MeiZiCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     [self.view addSubview:self.contentCollectView];

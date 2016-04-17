@@ -32,7 +32,7 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
-  - TabSwipable (0.0.2)
+  - TabSwipable (0.0.3)
   - UIActivityIndicator-for-SDWebImage (1.2):
     - SDWebImage (~> 3.7)
   - YTKNetwork (0.6.0):
@@ -43,7 +43,7 @@ DEPENDENCIES:
   - MJRefresh
   - MWPhotoBrowser
   - SDWebImage
-  - TabSwipable (= 0.0.2)
+  - TabSwipable (= 0.0.3)
   - UIActivityIndicator-for-SDWebImage
   - YTKNetwork
 
@@ -55,7 +55,7 @@ SPEC CHECKSUMS:
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
-  TabSwipable: 92da312ccaea4514dd917a15a5c757f09fee6cd4
+  TabSwipable: c0aaee166f596b9bbdcc1c28cf4c5517e1452d20
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   YTKNetwork: 988660d5fab310a55895239751ecfa74c3224a77
 

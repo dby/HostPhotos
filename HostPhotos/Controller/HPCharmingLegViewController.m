@@ -29,6 +29,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)initRefreshHeaderAndFooter {
     
     NSLog(@"%s", __func__);
+    self.contentCollectView.contentInset = UIEdgeInsetsMake(0, 0, 90, 0);
     MJRefreshNormalHeader *header       = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshMeizi)];
     MJRefreshAutoNormalFooter *footer   = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreMeizi)];
     header.automaticallyChangeAlpha     = YES;

@@ -28,6 +28,8 @@ static NSString * const reuseIdentifier = @"MeiZiCellID";
     self.lim = 20;
     self.off = 0;
     
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    
     self.meiziArray = [[NSMutableArray alloc] init];
     
     HPFlowLayout *collectLayout = [[HPFlowLayout alloc] init];
@@ -46,11 +48,11 @@ static NSString * const reuseIdentifier = @"MeiZiCellID";
 #pragma mark - Refresh And LoadMore
 - (void)refreshMeizi {
     NSLog(@"refreshMeizi lim:%lu off:%ld", (unsigned long)self.lim, (long)self.off);
-    [self.viewModel getData:0 withLim:self.off withSuccessBack:^(NSArray *datasource) {
+    [self.viewModel getData:0 withLim:(self.off + self.lim) withSuccessBack:^(NSArray *datasource) {
         // 获得0 ~ self.off的内容:w
         
         [self.contentCollectView .mj_header endRefreshing];
-        self.meiziArray  = [datasource copy];
+        self.meiziArray  = [datasource mutableCopy];
         [self.contentCollectView reloadData];
         
     } withErrorCallBack:^(NSError *error) {
